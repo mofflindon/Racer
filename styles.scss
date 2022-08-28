@@ -1,0 +1,1032 @@
+@font-face {
+	font-family: 'ReformaGroteskDemiC';
+	src: url('assets/fonts/ReformaGroteskDemiC.eot');
+	src: local('ReformaGroteskDemiC'),
+		url('assets/fonts/ReformaGroteskDemiC.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/ReformaGroteskDemiC.woff') format('woff'),
+		url('assets/fonts/ReformaGroteskDemiC.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReformaGroteskLightC';
+	src: url('assets/fonts/ReformaGroteskLightC.eot');
+	src: local('ReformaGroteskLightC'),
+		url('assets/fonts/ReformaGroteskLightC.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/ReformaGroteskLightC.woff') format('woff'),
+		url('assets/fonts/ReformaGroteskLightC.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReformaGroteskMediumC';
+	src: url('assets/fonts/ReformaGroteskMediumC.eot');
+	src: local('ReformaGroteskMediumC'),
+		url('assets/fonts/ReformaGroteskMediumC.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/ReformaGroteskMediumC.woff') format('woff'),
+		url('assets/fonts/ReformaGroteskMediumC.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ReformaGroteskBoldC';
+	src: url('assets/fonts/ReformaGroteskBoldC.eot');
+	src: local('ReformaGroteskBoldC'),
+		url('assets/fonts/ReformaGroteskBoldC.eot?#iefix') format('embedded-opentype'),
+		url('assets/fonts/ReformaGroteskBoldC.woff') format('woff'),
+		url('assets/fonts/ReformaGroteskBoldC.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+:root {
+    --red-color: #DB3138;
+    --grey-color: #898989;
+}
+
+body {
+    background: #141414;
+    overflow-x: hidden;
+}
+
+.list-item {
+    color: white;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    font-family: 'ReformaGroteskMediumC';
+}
+
+.header {
+    background: url('assets/images/png/background.png');
+    height: 1000px;
+    padding-top: 1px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.main-menu{
+    width: 1315px;
+    margin-left: 272px;
+    margin: 40px auto;
+    display: flex;
+}
+.main-menu__list{
+    display: flex;
+}
+.main-menu__list-item{
+    text-align: center;
+    &:nth-child(1){
+        width: 44px;
+        height: 29px;
+        margin-left: 12px;
+    }
+    &:nth-child(2){
+        width: 132px;
+        height: 29px;
+        margin-left: 39px;
+    }
+    &:nth-child(3){
+        width: 150px;
+        height: 29px;
+        margin-left: 35px;
+    }
+    &:nth-child(4){
+        width: 100px;
+        height: 29px;
+        margin-left: 29px;
+    }
+    a {
+        transition: 0.5s;
+    }
+    &:hover {
+        a{
+            color: var(--red-color);
+        }
+    }
+}
+
+.hz{
+    margin-left: 726px;
+    margin-top: 1px;
+    div {
+        background: var(--red-color);
+        width: 40px;
+        height: 3px;
+        transition: 1s;
+    }
+    .hz__line2 {
+        margin-top: 8px;
+        margin-left: -10px;
+    }
+    .hz__line3 {
+        margin-top: 8px;
+    }
+    &:hover {
+        .hz__line1 {
+            margin-left: -4px;
+        }
+        .hz__line2 {
+            margin-left: 4px;
+        }
+        .hz__line3 {
+            margin-left: -4px;
+        }
+
+    }
+}
+
+.heading-description{
+    text-align: center;
+    margin-top: 172px;
+}
+.heading-description__heading{
+    color: var(--red-color);
+    font-family: 'ReformaGroteskBoldC';
+    font-size: 150px;
+}
+
+.heading-description__rhombus {
+    padding-left: 1px;
+    margin: 40px auto;
+}
+
+.rhombus{
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+}
+
+.rhombus__item {
+    background: var(--red-color);
+    transform: rotate(-45deg);
+    width: 10px;
+    height: 10px;
+}
+
+.heading-description__description{
+    color: white;
+    font-family: 'ReformaGroteskMediumC';
+    font-size: 40px;
+    margin-top: 42px;
+    line-height: 48px;
+}
+.heading-description__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    & a {
+        padding-top: 20px;
+        width: 169px;
+        height: 61px;
+        font-family: 'ReformaGroteskDemiC';
+        font-size: 24px;
+        color: white;
+        transition: 2s;
+        &:hover {
+            box-shadow: inset 169px 0 0 var(--red-color);
+        }
+    }
+}
+
+.header-table {
+    display: flex;
+    margin: 105px auto;
+    width: 1920px;
+    border-top: 1px solid var(--grey-color);
+    border-bottom: 1px solid var(--grey-color);
+    h1 {
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 48px;
+    }
+    address {
+        color: var(--red-color);
+        letter-spacing: 0.05em;
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+    div {
+        height: 212px;
+        width: 640px;
+        text-align: center;
+        &:nth-child(1){
+            border-right: 1px solid var(--grey-color);
+        }
+        &:nth-child(2){
+            border-right: 1px solid var(--grey-color);
+        }
+    }
+    
+    .header-table__1st-cl-1st-address {
+        margin-top: 32px;
+    }
+    .header-table__1st-cl-2st-address{
+        margin-top: 10px;
+    }
+    .header-table__2st-cl-1st-address{
+        margin-top: 27px;
+    }
+    .header-table__2st-cl-2st-address{
+        margin-top: 23px;
+    }
+    .header-table__3st-cl-1st-address{
+        margin-top: 28px;
+    }
+    .header-table__3st-cl-2st-address{
+        margin-top: 23px;
+    }
+    
+}
+
+
+.achievements{
+    width: 1297px;
+    margin: 180px auto;
+    display: flex;
+}
+.our-achievements{
+
+}
+.our-achievements__heading{
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    letter-spacing: 0.05em;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 8px;
+}
+
+.our-achievemnets__second-span{
+    display: block;
+    margin-top: 20px;
+}
+
+.our-achievements__rhombus{
+    margin-top: 56px;
+    margin-left: 5px;
+}
+
+
+.our-achievements__paragraph{
+    font-family: 'ReformaGroteskMediumC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: 0.03em;
+    color:white;
+    width: 500px;
+    margin-top: 62px;
+    line-height: 28px;
+}
+.achievements-table{
+    display: flex;
+    margin-left: 59px;
+    text-align: center;
+    p{
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 19px;
+    }
+    h3{
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--red-color);
+        margin-top: 30px;
+        &::before{
+            content: '#';
+            font-size: 30px;
+        }
+    }
+    .achievements-table__list-item{
+        width: 318px;
+        height: 177px;
+        border: 1px solid var(--grey-color);
+    }
+}
+
+.achievements-table__2nd-list{
+    margin-top: 37px;
+}
+
+#goblet::before{
+    content: '';
+    font-size: 0;
+}
+
+
+.mini-gallery {
+    display: flex;
+    width: 1320px;
+    justify-content: space-around;
+    margin: 0 auto;
+    div {
+        width: 416px;
+        height: 350px;
+        position: relative;
+    
+        &::before{
+        content: '';
+        width: 366px;
+        height: 70px;
+        position: absolute;
+        background-color: var(--red-color);
+        left: 25px;
+        top: 315px;
+        }
+        
+        &::after{
+            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vulputate laoreet sapien a sit';
+            width: 244px;
+            height: 75px;
+            position: absolute;
+            left: 89px;
+            top: 343px;
+            color: white;
+            font-family: 'ReformaGroteskDemiC';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            line-height: 25px;
+            }
+    }
+}
+
+
+
+.about-us{
+    display: flex;
+    margin: 250px auto 0px auto;
+    width: 1305px;
+}
+.about-us__description{
+    width: 530px;
+    p{
+        font-family: 'ReformaGroteskMediumC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        color: white;
+        letter-spacing: 0.03em;  
+    }
+    h1{
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        color: white;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;  
+    }
+}
+
+.about-us__1st-list-item{
+    .about-us__heading-n-icon{
+        margin-left: 10px;
+        h1{
+            margin-left: 35px;
+            margin-top: 11px;
+        }
+    }
+    p {
+        margin-top: 30px;
+        margin-left: 3px;
+    }
+}
+
+.about-us__rhombus {
+    margin-top: 43px;
+    margin-left: 195px;
+}
+
+
+.about-us__heading-n-icon{
+    display: flex;
+}
+
+.about-us__2nd-list-item{
+    .about-us__heading-n-icon {
+        margin-top: 54px;
+        margin-left: 2px;
+        h1 {
+            margin-left: 30px;
+        }
+    }
+    p{
+        margin-top: 40px;
+        margin-left: 2px;
+    }
+}
+.about-us__3nd-list-item{
+    .about-us__heading-n-icon{
+        margin-top: 44px;
+        margin-left: 2px;
+        h1{
+            margin-left: 31px;
+            margin-top: 10px;
+        }
+    }
+    p {
+        margin-top: 28px;
+        margin-left: 2px;
+    }
+}
+
+.about-us__image{
+    margin-left: 140px;
+    position: relative;
+    &::after{
+        content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor nibh feugiat est. Consectetur lectus';
+        position: absolute;
+        width: 422px;
+        height: 50px;
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        color: white;
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        left: 100px;
+        top: 600px;
+    }
+}
+
+
+.service{
+    margin-top: 176px;
+}
+.service__heading{
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 140%;
+    /* identical to box height, or 73px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+}
+
+.service__rhombus{
+    margin-top: 50px;
+    margin: 100px auto 0 auto;
+}
+
+.service__list{
+    display: flex;
+    margin: 165px auto 0px auto;
+    width: 1295px;
+    justify-content: space-between;
+    text-align: center;
+}
+.service__list-item{
+    width: 306px;
+    height: 428px;
+    border: 1px solid var(--grey-color);
+    text-align: center;
+    p {
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* white */
+
+        color: #FFFFFF;
+        width: 226px;
+        height: 88px;
+        margin: 20px auto 0px auto;
+    }
+
+    h1{
+        /* p / 24d */
+
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    /* identical to box height, or 34px */
+
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* white */
+
+    color: #FFFFFF;
+    margin-top: 20px;
+    }
+    img {
+        margin-top: 76px;
+    }
+
+    &:nth-child(1){
+        img{
+            margin-top: 85px;
+        }
+    }
+
+    &:nth-child(3){
+        img {
+            margin-top: 90px;
+        }
+        h1{
+            margin-top: 30px;
+        }
+    }
+    
+    div:nth-child(4){
+        display: flex;
+        justify-content: center;
+        /* p / 18d */
+
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 140%;
+        /* or 25px */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+
+        margin: 25px auto 0 auto;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90px;
+            height: 43px;
+            color: white;
+            transition: ease 0.5s;
+            &:hover{
+                box-shadow: inset 90px 0 0 var(--red-color);
+            }
+        }
+    }
+}
+
+.advantage{
+ display: flex;
+ width: 1320px;
+ margin: 180px auto 0 auto;
+
+    h1{
+        /* heading / h3 */
+
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 140%;
+        /* or 45px */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* white */
+
+        color: #FFFFFF;
+    }
+    p{
+        /* p / 24m */
+
+        font-family: 'ReformaGroteskMediumC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        /* or 29px */
+
+        letter-spacing: 0.03em;
+
+        /* white */
+
+        color: #FFFFFF;
+    }
+}
+
+.image-yellow-car{
+    img {
+        margin-left: 15px;
+    }
+    p{
+            font-family: 'ReformaGroteskDemiC';
+            width: 422px;
+            height: 50px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 18px;
+            letter-spacing: 0.09em;
+            text-align: center;
+            line-height: 23px;
+            margin-top: 50px;
+            margin-left: 129px;
+    }
+}
+.advantage__list{
+    margin-left: 100px;
+}
+.advantage__list-item{
+    margin-left: 40px;
+    &:nth-child(1){
+        img{
+            margin-top: 5px;
+        }
+        h1{
+            margin-top: 10px;
+            margin-left: 27px;
+        }
+        p{
+            margin-top: 35px;
+        }
+    }
+    &:nth-child(3){
+        margin-top: 43px;
+        margin-left: 30px;
+        img{
+            margin-left: 20px;
+        }
+        h1{
+            margin-top: 14px;
+            margin-left: 35px;
+        }
+        p{
+            margin-top: 30px;
+            margin-left: 11px;
+        }
+    }
+    &:nth-child(5){
+        margin-top: 53px;
+        h1{
+            margin-left: 30px;
+        }
+        p{
+            margin-top: 40px;
+        }
+    }
+}
+.advantage__list-item-heading{
+    display: flex;
+}
+
+.advantage__rhombus{
+    &:nth-child(2){
+        margin: 45px auto 0 auto;
+    }
+    &:nth-child(4){
+        margin: 40px auto 0 auto;
+    }
+}
+
+
+.example-work{
+    margin-top: 180px;
+    h1{
+        /* heading / h2 */
+
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 140%;
+        /* identical to box height, or 73px */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* white */
+
+        color: #FFFFFF;
+    }
+}
+
+.example-work__rhombus{
+    margin: 48px auto 0 auto;
+}
+
+.example-work__1st-row{
+    margin-top: 62px;
+    display: flex;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.example-work__2nd-row{
+    display: flex;
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.example-work__3nd-row{
+    width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.question{
+    margin-top: 115px;
+    h1{
+        /* heading / h2 */
+
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 52px;
+        line-height: 140%;
+        /* identical to box height, or 73px */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* white */
+
+        color: #FFFFFF;
+    }
+}
+.question__rhombus{
+    margin: 44px auto 0 auto;
+}
+
+.question__block-form{
+    width: 650px;
+    margin: 62px auto 0 auto;
+}
+
+.qustion__form{
+    input{
+        background: none;
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+            /* or 22px */
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+            /* white */
+
+        color: #FFFFFF;
+        border: 1px solid #898989;
+        padding-left: 25px;
+        
+        &:active, &:focus{
+            border: 1px solid var(--red-color);
+            outline: none;
+            text-transform: none;
+        }
+    }
+
+    .question__form1{
+        display: flex;
+        input{
+            width: 306px;
+            height: 47px;
+
+
+            /* white */
+
+            color: #FFFFFF;
+            border: 1px solid #898989;
+            padding-left: 25px;
+            &:nth-child(2){
+                margin-left: 24px;
+            }
+            &:active, &:focus{
+                border: 1px solid var(--red-color);
+                outline: none;
+            }
+        }
+    }
+}
+
+textarea{
+    margin-top: 25px;
+    width: 526px;
+    height: 150px;
+    resize: none;
+    background: none;
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+        /* or 22px */
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+        /* white */
+    padding-top: 10px;
+
+    color: #FFFFFF;
+    border: 1px solid #898989;
+    padding-left: 25px;
+    
+    &:active, &:focus{
+        border: 1px solid var(--red-color);
+        outline: none;
+        text-transform: none;
+    }
+}
+
+
+.question__form2{
+    display: flex;
+}
+
+.question__address{
+    margin-left: 70px;
+    margin-top: 9px;
+    address{
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+    }
+}
+
+.question__form3 {
+    display: flex;
+    margin-top: 23px;
+    input{
+        border: 0;
+        /* p / 24d */
+        padding: 0;
+        width: 150px;
+        height: 62px;
+
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 140%;
+        /* identical to box height, or 34px */
+
+        text-align: center;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* white */
+        user-select: none;
+        color: #FFFFFF;
+        transition: 0.5s;
+        &:hover{
+            box-shadow: inset 150px 0 0 var(--red-color);
+            text-transform: uppercase;
+        }
+    }
+    address{
+        /* p / 16d */
+
+        font-family: 'ReformaGroteskDemiC';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* white */
+
+        color: #FFFFFF;
+    }
+
+    .question__address2{
+        margin-left: 185px;
+        div{
+            display: flex;
+            margin-top: 17px;
+            margin-left: 10px;
+            address:nth-child(2){
+                margin-left: 40px;
+            }
+        }
+        address{
+            display: flex;
+        }
+        p {
+            margin-left: 10px;
+        }
+    }
+}
+
+
+.footer {
+    border-top: 1px solid var(--grey-color);
+    margin-top: 95px;
+    height: 89px;
+}
+
+.footer__block {
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.copyright {
+    /* p / 16d */
+
+    font-family: 'ReformaGroteskDemiC';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    /* or 22px */
+
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+
+    /* white */
+    margin-left: 100px;
+    margin-top: 33px;
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+
+.footer__menu{
+    display: flex;
+    margin-left: 186px;
+    margin-top: 30px;
+    div{
+        &:nth-child(2){
+            margin-left: 40px;
+        }
+        &:nth-child(3){
+            margin-left: 40px;
+        }
+        &:nth-child(4){
+            margin-left: 40px;
+        }
+    }
+    a{
+        font-family: 'ReformaGroteskMediumC';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        /* identical to box height, or 29px */
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        /* white */
+
+        color: #FFFFFF;
+        transition: 0.5s;
+        &:hover{
+            color: var(--red-color);
+        }
+    }
+}
